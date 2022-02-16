@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+:root{
+	--body-background-color: #f5f6f7;
+	--main-background-color: white;
+	--font-color: #9ba1a3;
+	--border-gray-color: #dadada;
+	--black-color: #000000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: #444444;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕";
+}
+header {
+}
+#top {
+	height: 50px;
+	background-color: #F5F5F5;
+}
+#top_menu1 {
+	float: left;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+
+#top_menu1.hover {
+	color: greenyellow;
+	float: left;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+#top_menu2 {
+	float: left;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+
+
+#top_menu2.hover{
+	float: left;
+	color:greenyellow;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+
+#top_menu3 {
+	float: left;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+
+
+#top_menu3.hover{
+	float: left;
+	color:greenyellow;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+
+#search {
+	float: right;
+	background-image: url("img/search.png");
+	margin: -4px 0 0 10px;
+	width: 233px;
+	height: 54px;
+}
+#search input {
+	margin: 21px 0 0 25px;
+	border: 0;
+}
+#logo_img {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 45px;
+}
+
+.box {
+	width: 1320px;
+	margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------------*/
+
+#main_menu {
+	margin-bottom : 30px;
+	height: 23px;
+	border-top: solid 1px #e2e2e2;
+	border-bottom: solid 1px #e2e2e2;
+	padding: 25px 20px;
+}
+
+#main_menu li {
+	display: inline;
+	font-size: 12px;
+	margin-left: 37px;
+}
+
+/*
+======================================================================================
+나의 쇼핑 활동*/
+
+.mypage-area{
+	min-width: 1400px;
+    max-width: 1800px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+
+.mypage-nav{
+	width: 170px;
+    font-family: "Musinsa", sans-serif !important;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 54px 0 0 0;
+    float: left;
+}
+
+
+.mypage-nav .menu{
+	margin-top: -11px;
+}
+
+dl{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.mypage-nav .menu > dt{
+	font-size: 22px;
+    line-height: 40px;
+    margin: 40px 0 2px 0;
+}
+
+dt{
+	display: block;
+}
+
+dd{
+	display: block;
+	margin-inline-start:40px;
+	margin:10px;
+}
+.mypage-info {
+	background-color:black;
+	color:white;
+}
+
+.mypage-info .inner {
+    max-width: 1880px;
+    margin: 0 auto;
+    padding: 95px 0 50px 290px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.mypage-info .mypage {
+    min-width: calc(100% - 550px);
+    float: left;
+    padding: 17px 50px 30px 210px;
+    margin-left: -210px;
+    box-sizing: border-box;
+    position: relative;
+  	font-size: 50px;
+}
+
+
+.mypage-info .my-menu {
+    display: table;
+    min-width: 760px;
+    float: left;
+    margin-top: 40px;
+}
+
+.mypage-info .my-menu > p {
+	display: table-cell;
+    width: 25%;
+    padding-right: 40px;
+}
+
+
+
+/* 좋아요 부분 */
+section {
+	padding : opx 100px 100px 100px;
+	height : 1000px;
+}
+
+section{
+	padding-left:50px;
+	margin-top:50px;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+}
+.like-title-wrap{
+	border-bottom: 3.5px solid var(--black-color);
+}
+.like-title-wrap strong{
+	font-size:22px;
+}
+.like-filter-wrap{
+	padding-top:25px;
+	width:100%;
+	vertical-align:center;
+	font-size:20px;
+	font-weight:600;
+	color:var(--border-gray-color);
+}
+.like-filter-wrap span{
+	font-size:18px;
+}
+#type-pname{
+	color:var(--black-color);
+}
+#type-pbrand{
+	color:var(--border-gray-color);
+}
+.like-filter-wrap:after {
+       content: "";
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-top:28px;
+}
+.product-info-wrap{
+	width:100%;
+	height:100%;
+}
+.column-wrap{
+	padding:25px 0 25px 0;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 0.5px solid var(--border-gray-color);
+}
+.product-img-wrap{
+	width:100px;
+	height:100px;
+}
+.column-wrap img{
+	width:100%;
+}
+.textinfo-wrap{
+	padding-left:25px;
+	height:90%;
+	display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style-type:none;
+    line-height:150%;
+}
+.a{
+	font-size:13px;
+}
+.b{
+	font-size:15px;
+	font-weight:570;
+	padding-bottom:5px;
+}
+.c{
+	font-size:14px;
+	font-weight:540;
+}
+.before-price{
+	color:var(--font-color);
+	text-decoration:line-through;
+	padding-right:10px;
+}
+.sell-price{
+	color:var(--black-color);
+	padding-right:10px;
+}
+.discount{
+	color:red;
+	font-weight:600;
+}
+.d{
+	display:flex;
+	align-items:center;
+}
+.d img{
+	width: 15px;
+	height: 15px;
+}
+.d span{
+	padding-top:1px;
+	font-size:12px;
+	color:red;
+}
+#orders, #like, .textinfo-wrap, .product-img-wrap img, .like-filter-wrap span:hover{
+	cursor:pointer;
+}
+
+
+
+
+footer {
+	margin-top: 100px;
+	border-top: solid 1px #e2e2e2;
+	height: 150px;
+}
+
+#footer_menu {
+	padding-top: 20px;
+	display: inline;
+	margin-left: 20px;
+    list-style-type:none;
+}
+</style>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body>
+<header>
+		<div id="top">
+			
+			<div class="box">
+				<div id="top_menu1">
+					LOGIN
+				</div>
+				<div id="top_menu2">
+					JOIN US
+				</div>
+				<div id="top_menu3">
+					MYPAGE
+				</div>
+				<div id="search"> <!-- 검색창 -->
+					<input type="text">
+				</div>
+			</div>
+		</div>
+		<div id="logo">
+			<div class="box">
+				<div id="logo_img">
+					<img src="img/wlogo.PNG">
+				</div>
+			</div>
+		</div>
+	</header>
+
+		<nav id="main_menu">
+		<div class="box">
+			<ul>
+			<li>BEST</li>
+			<li>TOP</li>
+			<li>BOTTOM</li>
+			<li>OPS</li>
+			<li>ACC</li>
+			<li>REVIEW</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- mypage header -->
+	<div class="mypage-info">
+		<div class="inner">
+			<div class = "mypage">My Page</div>
+			<div class = "my-menu">
+				<p> 적립금 : <strong>5000</strong></p>
+				<p> 포인트 : <strong> 9000</strong></p>
+				<p> 쿠폰 : <strong>10</strong></p>
+				<p> 리뷰 : <strong>11</strong></p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- myPage-area -->
+		<div class = "mypage-area">
+			<nav class = "mypage-nav">
+				<dl class = "menu">
+					<dt>나의 쇼핑 활동</dt>
+					<dd id="orders" onclick="location.href='mypage.html'">
+						주문 내역 조회
+					</dd>
+					<dd>
+						구매 후기
+					</dd>
+					<dd>
+						상품 문의
+					</dd>
+					<dd>
+						장바구니
+					</dd>
+					<dd>
+						최근 본 상품
+					</dd>
+					<dd id="like"  onclick="location.href='like.html'">
+						좋아요
+					</dd>
+					<dt> 회원정보 </dt>
+					<dd>
+						개인정보설정
+					</dd>
+					<dd>
+						비밀번호변경
+					</dd>
+					<dd>
+						메시지함
+					</dd>
+					
+				</dl>
+			</nav>		
+		</div>
+		
+	<!-- 좋아요 -->	
+		
+	<section>
+		<div class="like-title-wrap">
+			<strong>좋아요</strong>
+			<div class="like-filter-wrap">
+				<span id="type-pname">상품&nbsp;&nbsp;</span>/<span id="type-pbrand">&nbsp;&nbsp;브랜드</span>
+			</div>
+		</div>
+		<div class="product-info-wrap">
+			<div class="product-info-wrap column-wrap">
+				<div class="product-img-wrap">
+				<img src="img/2_쿠퍼로고티셔츠네이비.jpg">
+				</div>
+				<ul class="product-info-wrap textinfo-wrap">
+					<li class="a">커버낫</li>
+					<li class="b">쿠퍼 로고 티셔츠 네이비</li>
+					<li class="c"><span class="before-price">49,000원</span><span class="sell-price">39,000원</span><span class="discount">18%</span></li>
+					<li class="d"><img src="img/redheart.png">
+						<span>12,300</span></li>
+				</ul>
+			</div>
+			<div class="product-info-wrap column-wrap">
+				<div class="product-img-wrap">
+				<img src="img/pants.jpg">
+				</div>
+				<ul class="product-info-wrap textinfo-wrap">
+					<li class="a">BURBERRY</li>
+					<li class="b">테크니컬 울 캔버스 크롭 테일러드 팬츠 더스티 샌드</li>
+					<li class="c"><span class="before-price">1,220,000원</span><span class="sell-price">976,000원</span><span class="discount">20%</span></li>
+					<li class="d"><img src="img/redheart.png">
+						<span>9,128</span></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="box">
+			<ul id="footer_menu">
+				<li>5조 조승호 김영진 방성원 정도원</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript">
+	var productinfo = document.querySelectorAll(".column-wrap");
+	for(var idx=0;idx<productinfo.length;idx++){
+		productinfo[idx].onclick=function(){	
+			window.open("productdetail.html");
+		}
+	}
+	
+	var pbrand = document.querySelector("#type-pbrand");
+	var pname = document.querySelector("#type-pname");
+	var column = document.querySelector("product-info-wrap");
+	pbrand.onclick=function(){
+		this.style.color="#000000";		
+		pname.style.color="#dadada";
+	}
+	pname.onclick=function(){
+		this.style.color="#000000";		
+		pbrand.style.color="#dadada";		
+	}
+</script>
+</html>

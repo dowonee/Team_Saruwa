@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #444444;
+	font-family: "Roboto", "Arial", "Nanum Gothic", "Malgun Gothic", "맑은 고딕";
+}
+header {
+	height: 220px;
+}
+#top {
+	height: 50px;
+	background-color: #F5F5F5;
+}
+#top_menu {
+	float: left;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+#search {
+	float: right;
+	background-image: url("img/search.png");
+	margin: -4px 0 0 10px;
+	width: 233px;
+	height: 54px;
+}
+#search input {
+	margin: 21px 0 0 25px;
+	border: 0;
+}
+#logo_img {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 45px;
+}
+.box {
+	width: 1320px;
+	margin: 0 auto;
+}
+#main_menu {
+	height: 23px;
+	border-top: solid 1px #e2e2e2;
+	border-bottom: solid 1px #e2e2e2;
+	padding: 25px 20px;
+}
+.items li {
+	list-style-type : none;
+}
+#main_menu li {
+	display: inline;
+	font-size: 12px;
+	margin-left: 37px;
+}
+section {
+	font-family: "Roboto", "Arial", "Nanum Gothic", "Malgun Gothic", "맑은 고딕";
+	padding: 80px;
+	width: 62%;
+	height: 6000px;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+.detail {
+	position: relative;
+	padding: 0 0 0 500px;
+	width: 970px;
+	height: auto;
+	box-sizing: border-box;
+	/*border: 1px solid red; */
+}
+
+.detail h2 {
+	font-size: 24px;
+	text-align: center;
+	color: #232323;
+	padding: 0 0 10px;
+	border-bottom: 2px solid #333;
+}
+
+.detail summary {
+	text-align: left;
+	padding: 32px 0px 10px 0;
+	font-family: cursive;
+}
+
+.detail table td, .detail table th {
+	padding: 16px 0;
+}
+
+.detail table th {
+	font-size: 15px;
+	color: #444;
+	text-align: left;
+}
+
+.detail table td {
+	font-size: 14px;
+	color: #444;
+}
+
+.detail table td.price {
+	font-size: 15px;
+	color: #444;
+}
+
+.detail table td.total {
+	font-size: 14px;
+	color: #0a56a9;
+}
+
+.detail table td.total strong {
+	font-size: 18px;
+	color: #0a56a9;
+}
+
+.detail table .length {
+	width: 34px;
+	height: 23px;
+	border: 1px solid #c6c6c6;
+	position: relative;
+}
+
+.detail table .length input {
+	width: 32px;
+	border: none;
+	height: 23px;
+	text-align: center;
+}
+
+.detail .dimg {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.detail .dimg>img {
+	border: 1px solid e8e8e8;
+	width: 368px;
+	height: 480px;
+}
+
+.detail li:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.detail li {
+	padding: 10px 10px 0 0;
+	float: left;
+	list-style-type: none;
+}
+
+.detail .dimg .on img {
+	border-color: #0a56a9;
+}
+
+.detail .dimg li img {
+	border: 1px solid e8e8e8;
+	float: left;
+}
+
+.detail .btns {
+	padding: 45px 0 0;
+	text-align: center;
+}
+
+.detail .btn1 {		/*바로구매*/
+	margin: 0 5px 0 0; 
+	width: 136px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 2px;
+	background: #0a56a9;
+	display: inline-block;
+}
+
+.detail .btn2 {		/*좋아요*/
+	margin: 0 5px 0 0;
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 2px;
+	background: #666;
+}
+
+.detail .btn3 { 	/*장바구니*/
+	display: inline-block;
+	width: 136px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 2px;
+	background: #666;
+}
+.morebtn .btn4 {	 /*상품정보더보기*/
+	position: absolute;
+	left : 300px;
+	top: 1150px;
+	width: 450px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 16px;
+	color: #e8e8e8;
+	border-radius: 2px;
+	background: #666;
+}
+.clear{
+	clear : both;
+}
+.recommend {
+	position: absolute;
+	left: 0;
+	top: 700px;
+	width: 970px;
+	box-sizing: border-box;
+}
+.recommend h3,
+.recommend img {
+	margin : 0 0 8px 0;
+}
+.recommend h4 {
+	margin : 0 0 3px 0;
+}
+.conimg {
+	position: absolute;
+	left: 0;
+	top: 1430px;
+	width: 970px;
+	height: auto;
+	box-sizing: border-box;
+}
+footer {
+	margin-top: 100px;
+	border-top: solid 1px #e2e2e2;
+	height: 150px;
+}
+#footer_menu {
+	padding-top: 20px;
+	display: inline;
+	margin-left: 20px;
+}
+</style>
+<script type="text/javascript">
+/*
+
+ */
+</script>
+</head>
+<body>
+	<header>
+		<div id="top">
+			
+			<div class="box">
+				<div id="top_menu">
+					LOGIN
+				</div>
+				<div id="top_menu">
+					JOIN US
+				</div>
+				<div id="top_menu">
+					MYPAGE
+				</div>
+				<div id="search"> <!-- 검색창 -->
+					<input type="text">
+				</div>
+			</div>
+		</div>
+		<div id="logo">
+			<div class="box">
+				<div id="logo_img">
+					<img src="img/wlogo.PNG">
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<nav id="main_menu">
+		<div class="box">
+			<ul>
+			<li>BEST</li>
+			<li>TOP</li>
+			<li>BOTTOM</li>
+			<li>OPS</li>
+			<li>ACC</li>
+			<li>REVIEW</li>
+			</ul>
+		</div>
+	</nav>
+	<section> <!-- 상세페이지 -->
+		<div class="detail">
+			<h2>쿠퍼 로고 티셔츠 네이비</h2>
+			<table>
+				<caption>
+					<summary>Product Info</summary>
+				</caption>
+				<colgroup>
+				<col style = "width:173px;"> 
+				<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>판매가</th>
+					<td class="price">39,000원</td>
+				</tr>
+				<tr>
+					<th>브랜드</th>
+					<td>커버낫</td>
+				</tr>
+				<tr>
+					<th>구매수량</th>
+					<td>
+						<div class="length">
+							<input type="number" min="1" value="1">
+							<a href="#a"></a>
+							<a href="#a"></a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>옵션선택</th>
+					<td>
+						<select class="option">
+							<option>S</option>
+							<option>M</option>
+							<option>L</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>배송비</th>
+					<td>무료배송</td>
+				</tr>
+				<tr>
+					<th>결제금액</th>
+					<td class="total"><strong>39,000</strong>원</td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="dimg"> <!-- 상세페이지 상품이미지 -->
+				<img src="img/2_쿠퍼로고티셔츠네이비.jpg" width="100%" alt="">
+				<ul>
+					<li class="on"><a href="#a"><img src="img/쿠퍼디테일1.JPG" alt=""></a></li>
+					<li><a href="#a"><img src="img/쿠퍼디테일2.JPG" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="btns">
+				<a class="btn1">바로구매</a>
+				<a class="btn2">♡</a>
+				<a class="btn3">장바구니</a>
+			</div>
+			
+			<div class="recommend">
+				<h3>추천상품</h3>
+				<img src="img/4_어센틱로고티셔츠블랙.jpg" width="200px" alt="">
+					<h5>어센틱 로고 티셔츠 블랙</h5>
+					<h5>커버낫</h5>
+					<h5>39,000원</h5>
+			</div>
+			<div class="morebtn">
+				<a class="btn4">상품정보 더보기</a>
+			</div>
+			<div class="conimg">
+				<img src="img/쿠퍼상세1.JPG" width="100%" alt="">
+				<img src="img/쿠퍼상세2.jpg" width="100%" alt="">
+			</div>
+			
+		</div>
+
+	</section>
+	<footer>
+		<div class="box">
+			<ul id="footer_menu">
+				<li>5조 조승호 김영진 방성원 정도원</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript">
+/*
+
+ */
+	var btnsobj = document.querySelector(".btns");
+	btnsobj.onclick=function(){
+	alert("로그인 후 이용가능합니다.");
+};
+</script>
+</html>

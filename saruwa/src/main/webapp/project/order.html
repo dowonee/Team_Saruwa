@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #444444;
+	font-family: "Roboto", "Arial", "Nanum Gothic", "Malgun Gothic", "맑은 고딕";
+}
+
+header {
+	height: 220px;
+}
+
+#top {
+	height: 50px;
+	background-color: #F5F5F5;
+}
+
+#top_menu {
+	float: left;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-family: "Roboto", "Arial", "Nanum Gothic", "Malgun Gothic", "맑은 고딕",
+		"Dotum", "돋움", "Apple SD Gothic Neo", "AppleGothic", sans-serif;
+}
+
+#search {
+	float: right;
+	background-image: url("img/search.png");
+	margin: -4px 0 0 10px;
+	width: 233px;
+	height: 54px;
+}
+
+#search input {
+	margin: 21px 0 0 25px;
+	border: 0;
+}
+
+#logo_img {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 45px;
+}
+
+.box {
+	width: 1320px;
+	margin: 0 auto;
+}
+
+#main_menu {
+	height: 23px;
+	border-top: solid 1px #e2e2e2;
+	border-bottom: solid 1px #e2e2e2;
+	padding: 25px 20px;
+}
+
+.items li {
+	list-style-type: none;
+}
+
+#main_menu li {
+	display: inline;
+	font-size: 12px;
+	margin-left: 37px;
+}
+
+section {
+	font-family: "Roboto", "Arial", "Nanum Gothic", "Malgun Gothic", "맑은 고딕";
+	padding: 80px;
+	width: 62%;
+	height: auto;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+.container {
+	position: relative;
+	padding : 0 0 0 100px;
+	width: 970px;
+	box-sizing: border-box;
+}
+
+ul { 
+	list-style-type : none;
+}
+
+label.title { 
+	font-weight : bold; 
+	width : 80px; 
+	float : left; 
+}
+div.centered { 
+	text-align : center;
+}
+fieldset {
+	border: 5px solid #eee;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	list-style-type: none;
+	margin : 15px 10px; 
+}
+fieldset legend { 
+	font-weight : bold;
+	font-size : 16px; 
+	color : purple; 
+}
+.container label {
+	margin-left : 15px;
+}
+.container input,
+.container textarea {
+	margin-left : 50px;
+}
+.meminfo {
+	margin-top : 20px;
+	margin-left : 10px;
+}
+.delinfo {
+	margin-top : 20px;
+	margin-left : 10px;
+}
+.productinfo {
+	margin-top : 20px;
+	margin-left : 10px;
+}
+#id {
+	width : 50px;
+}
+#cnt {
+	width : 50px;
+}
+#checkbox {
+	margin : 0 10px 0 5px;
+}
+ul li { 
+	margin-bottom : 10px; 
+}
+.centered .btn1 {
+	margin: 0 10px 0 0; 
+	width: 136px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 3px;
+	background: #0a56a9;
+	display: inline-block;
+}
+.centered .btn2 {
+	margin: 0 5px 0 0; 
+	width: 136px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 3px;
+	background: #666;
+	display: inline-block;
+}
+
+</style>
+<script type="text/javascript">
+/*
+
+ */
+</script>
+</head>
+<body>
+	<header>
+		<div id="top">
+			
+			<div class="box">
+				<div id="top_menu">
+					LOGIN
+				</div>
+				<div id="top_menu">
+					JOIN US
+				</div>
+				<div id="top_menu">
+					MYPAGE
+				</div>
+				<div id="search"> <!-- 검색창 -->
+					<input type="text">
+				</div>
+			</div>
+		</div>
+		<div id="logo">
+			<div class="box">
+				<div id="logo_img">
+					<img src="img/wlogo.PNG">
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<nav id="main_menu">
+		<div class="box">
+			<ul>
+			<li>BEST</li>
+			<li>TOP</li>
+			<li>BOTTOM</li>
+			<li>OPS</li>
+			<li>ACC</li>
+			<li>REVIEW</li>
+			</ul>
+		</div>
+	</nav>
+	<section>
+		<div class="container">
+			<!-- 주문번호 넣는 법 물어보기 -->
+			<h1>SARUWA 주문서</h1>
+			<form action="test.jsp"> <!-- 주문서정보를 jsp로 받음 -->
+				<fieldset>
+					<legend  class="meminfo">수령자 정보</legend>
+					<ul>
+					
+						<li>
+							<label for="uname" class="title">이름</label> 
+							<input type="text" id="uname" placeholder="여백없이 입력" required>
+						</li>
+						<li>
+							<label for="tel1" class="title">연락처</label> 
+							<input type="tel" id="tel1" placeholder="연락가능한 번호" required>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend class="delinfo">배송지 정보</legend>
+					<ul>
+						<li>
+							<label for="addr" class="title">주소</label> 
+							<input type="text" size="40" id="addr" required>
+						</li>
+						<li>
+							<label for="tel2" class="title">전화번호</label> 
+							<input type="tel" id="tel2" required>
+						</li>
+						<li>
+							<label for="comment" class="title">메 모</label> 
+							<textarea cols="40" rows="3" id="comment"></textarea>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend class="productinfo">상품 정보</legend>
+					<ul>
+						<li>
+							<label>
+								<input id="checkbox" type="checkbox"> 쿠퍼 로고 티셔츠 네이비
+							</label> 
+							<label>
+								<input type="text" id="size" value="M" width="50px">
+							</label>
+							<label>
+								<input id="cnt" type="number" value="1" min="1">개 
+							</label>
+						</li>
+
+					</ul>
+				</fieldset>
+				<div class="centered">
+					<input type="submit" class="btn1" value="결제하기">
+					<input type="reset" class="btn2" value="다시작성">
+				</div>
+			</form>
+		</div>
+
+
+	</section>
+	
+
+</body>
+<script type="text/javascript">
+/*
+
+ */
+</script>
+</html>

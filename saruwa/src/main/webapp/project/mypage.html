@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type = "text/javascript">
+/*
+
+*/
+</script>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;	
+}
+body{
+	color: #444444;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕";
+}
+header {
+}
+#top {
+	height: 50px;
+	background-color: #F5F5F5;
+}
+#top_menu1 {
+	float: left;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+
+#top_menu1.hover {
+	color: greenyellow;
+	float: left;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+#top_menu2 {
+	float: left;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+
+
+#top_menu2.hover{
+	float: left;
+	color:greenyellow;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+
+#top_menu3 {
+	float: left;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+
+
+#top_menu3.hover{
+	float: left;
+	color:greenyellow;
+	margin: 15px 0 0 20px;
+	font-size: 12px;
+	letter-spacing :1px;
+	font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
+}
+
+#search {
+	float: right;
+	background-image: url("img/search.png");
+	margin: -4px 0 0 10px;
+	width: 233px;
+	height: 54px;
+}
+#search input {
+	margin: 21px 0 0 25px;
+	border: 0;
+}
+#logo_img {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 45px;
+}
+
+.box {
+	width: 1320px;
+	margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------------*/
+
+#main_menu {
+	margin-bottom : 30px;
+	height: 23px;
+	border-top: solid 1px #e2e2e2;
+	border-bottom: solid 1px #e2e2e2;
+	padding: 25px 20px;
+}
+
+#main_menu li {
+	display: inline;
+	font-size: 12px;
+	margin-left: 37px;
+}
+
+/*
+======================================================================================
+나의 쇼핑 활동*/
+
+.mypage-area{
+	min-width: 1400px;
+    max-width: 1800px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+
+.mypage-nav{
+	width: 170px;
+    font-family: "Musinsa", sans-serif !important;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 54px 0 0 0;
+    float: left;
+}
+
+
+.mypage-nav .menu{
+	margin-top: -11px;
+}
+
+dl{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.mypage-nav .menu > dt{
+	font-size: 22px;
+    line-height: 40px;
+    margin: 40px 0 2px 0;
+}
+
+dt{
+	display: block;
+}
+
+dd{
+	display: block;
+	margin-inline-start:40px;
+	margin:10px;
+}
+
+/* 
+======================================================================================
+ 주문내역 조회 헤더 
+ */
+ 
+.mypage-info {
+	background-color:black;
+	color:white;
+}
+
+.mypage-info .inner {
+    max-width: 1880px;
+    margin: 0 auto;
+    padding: 95px 0 50px 290px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.mypage-info .mypage {
+    min-width: calc(100% - 550px);
+    float: left;
+    padding: 17px 50px 30px 210px;
+    margin-left: -210px;
+    box-sizing: border-box;
+    position: relative;
+  	font-size: 50px;
+}
+
+
+.mypage-info .my-menu {
+    display: table;
+    min-width: 760px;
+    float: left;
+    margin-top: 40px;
+}
+
+.mypage-info .my-menu > p {
+	display: table-cell;
+    width: 25%;
+    padding-right: 40px;
+}
+
+section {
+	padding : opx 100px 100px 100px;
+	height : 1000px;
+}
+
+li{
+	list-style : none;
+}
+
+.mypage-main {
+    margin-top: -32px;
+}
+
+.mypage-cont {
+    width: calc(100% - 250px);
+    padding: 0;
+    float: right;
+ }
+
+.hidden{
+	display:none;
+}
+
+.n-section-block {
+    padding: 0;
+}
+
+.n-section-block .n-section-title:not(.first) {
+    margin-top: 80px;
+}
+
+.n-section-title {
+    margin-top: 48px;
+  	padding-bottom : 14px;
+    font-family: "Gulim", "Apple SD Gothic", Auto, sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+    position: relative;
+}
+
+.n-section-title .tit {
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Musinsa", sans-serif !important;
+}
+
+.mypage-cont .n-section-title .state {
+    padding: 14px 0 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Musinsa", sans-serif !important;
+}
+
+.mypage-cont .n-section-title .state li {
+    display: inline-block;
+    color: #ccc;
+    margin-right: 16px;
+}
+
+/*
+========================================================================================
+주문내역 테이블
+*/
+
+
+.n-table.table-col .p1{
+	margin: 10px 0;
+}
+
+.p1{
+	display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-height: 96px;
+    font-family: "Gulim", "Apple SD Gothic", Auto, sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+}
+
+.n-table.table-col td{
+	height: 70px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f5f5f5;
+    text-align: center;
+    vertical-align: middle;
+    word-break: break-all;	
+}
+
+.p1 .info{
+	display: table-cell;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.p1 .info .brand{
+	font-weight: 300;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.p1 .info li{
+	font-size : 14px;
+	line-height : 22px;
+}
+
+#orders, #like:hover{
+	cursor:pointer;
+} 
+
+/* =======================================================================================*/
+
+footer {
+	margin-top: 100px;
+	border-top: solid 1px #e2e2e2;
+	height: 150px;
+}
+
+#footer_menu {
+	padding-top: 20px;
+	display: inline;
+	margin-left: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+		<div id="top">
+			
+			<div class="box">
+				<div id="top_menu1">
+					LOGIN
+				</div>
+				<div id="top_menu2">
+					JOIN US
+				</div>
+				<div id="top_menu3">
+					MYPAGE
+				</div>
+				<div id="search"> <!-- 검색창 -->
+					<input type="text">
+				</div>
+			</div>
+		</div>
+		<div id="logo">
+			<div class="box">
+				<div id="logo_img">
+					<img src="img/wlogo.PNG">
+				</div>
+			</div>
+		</div>
+	</header>
+
+		<nav id="main_menu">
+		<div class="box">
+			<ul>
+			<li>BEST</li>
+			<li>TOP</li>
+			<li>BOTTOM</li>
+			<li>OPS</li>
+			<li>ACC</li>
+			<li>REVIEW</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- mypage header -->
+	<div class="mypage-info">
+		<div class="inner">
+			<div class = "mypage">My Page</div>
+			<div class = "my-menu">
+				<p> 적립금 : <strong>5000</strong></p>
+				<p> 포인트 : <strong> 9000</strong></p>
+				<p> 쿠폰 : <strong>10</strong></p>
+				<p> 리뷰 : <strong>11</strong></p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- myPage-area -->
+		<div class = "mypage-area">
+			<nav class = "mypage-nav">
+				<dl class = "menu">
+					<dt>나의 쇼핑 활동</dt>
+					<dd id="orders" onclick="location.href='mypage.html'">
+						주문 내역 조회
+					</dd>
+					<dd>
+						구매 후기
+					</dd>
+					<dd>
+						상품 문의
+					</dd>
+					<dd>
+						장바구니
+					</dd>
+					<dd>
+						최근 본 상품
+					</dd>
+					<dd id="like" onclick="location.href='like.html'">
+						좋아요
+					</dd>
+					<dt> 회원정보 </dt>
+					<dd>
+						개인정보설정
+					</dd>
+					<dd>
+						비밀번호변경
+					</dd>
+					<dd>
+						메시지함
+					</dd>
+					
+				</dl>
+			</nav>		
+		</div>
+		<!-- myPage area -->
+		
+		<section>
+		<section class = "mypage-cont mypage-main">
+			<h1 class = "hidden"> 마이페이지</h1>
+		<section class= "n-section-block first">
+			<header class = "n-section-title">
+				<h2 class = "tit">주문내역 조회</h2>
+				<ul class = "state">
+					<li>입금/결제 0</li>
+					<li>배송중 0</li>
+					<li>배송완료 0</li>
+					<li>구매확정 0</li>
+					<!--  환불 교환 -->
+					<li>교환 0</li>
+					<li>교환완료 0</li>
+					<li>환불 0</li>
+					<li>환불완료 0</li>
+				</ul>
+			</header>
+		
+			<table class = "n-table table-col">
+				<colgroup>
+					<col style = "width:400px">
+					<col style = "width:200px">
+					<col style = "width:200px">
+					<col style = "width:180px">
+				</colgroup>	
+				<thead>
+					<tr>
+						<th scope = "col">상품정보</th>
+						<th scope = "col">주문번호</th>
+						<th scope = "col">주문금액(수량)</th>
+						<th scope = "col">주문상태</th>
+					</tr>
+				</thead>	
+				<tbody>
+					<tr>
+						<td> 
+							<div class = "p1"><img src="img/1_빅트위치로고티셔츠화이트.jpg" width="100px">
+								<ul class = "info">
+									<li class = "brand"> 빅트위치로고티셔츠화이트</li>
+								</ul>
+							</div>
+						</td>
+						<td>
+							<div> 222222</div>
+						</td>
+						<td>
+							<div> 35000<br><span class = "txt-default">2개</span></div>
+						</td>
+						<td>
+							<div class = "btn-set">
+								<button type = "button"> 구매확정</button>
+							 </div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class = "p1"><img src="img/2_쿠퍼로고티셔츠네이비.jpg" width="100px">
+								<ul class = "info">
+									<li class = "brand">쿠퍼로고티셔츠네이비</li>
+								</ul>
+							</div>
+						</td>
+						<td>
+							<div>333333</div>
+						</td>
+						<td>
+							<div> 48000 <br><span class = "txt-default">1개</span></div>
+						</td>
+						<td>
+							<div class = "btn-set">
+								<button type = "button"> 구매확정</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class = "p1"><img src="img/3_에디오버핏반팔티셔츠.jpg" width="100px">
+								<ul class = "info">
+									<li class = "brand"> 에디오버빗반팔티셔츠</li>
+								</ul>
+							</div>
+						</td>
+						<td>
+							<div>444444</div>
+						</td>
+						<td>
+							<div> 28000 <br><span class = "txt-default"> 3개</span></div>
+						</td>
+						<td>
+							<div class = "btn-set">
+								<button type = "button"> 구매확정</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</section>
+	</section>
+	</section>
+	
+	<footer>
+		<div class="box">
+			<ul id="footer_menu">
+				<li>5조 조승호 김영진 방성원 정도원</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+<script type = "text/javascript">
+/*
+
+*/
+	var topMenu1 = document.getElementById('top_menu1');
+	//마우스 오버
+	topMenu1.addEventListener('mouseover',function(){
+		topMenu1.setAttribute('class','hover');
+	});
+	
+	// 마우스 아웃
+	topMenu1.addEventListener('mouseout',function(){
+		topMenu1.removeAttribute('class');	
+	});
+	
+	var topMenu2 = document.getElementById('top_menu2');
+	//마우스 오버
+	topMenu2.addEventListener('mouseover',function(){
+		topMenu2.setAttribute('class','hover');
+	});
+	
+	// 마우스 아웃
+	topMenu2.addEventListener('mouseout',function(){
+		topMenu2.removeAttribute('class');	
+	});
+	
+	var topMenu3 = document.getElementById('top_menu3');
+	//마우스 오버
+	topMenu3.addEventListener('mouseover',function(){
+		topMenu3.setAttribute('class','hover');
+	});
+	
+	// 마우스 아웃
+	topMenu3.addEventListener('mouseout',function(){
+		topMenu3.removeAttribute('class');	
+	});
+</script>
+</html>

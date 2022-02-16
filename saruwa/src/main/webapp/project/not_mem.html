@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+:root{
+	--body-background-color: #f5f6f7;
+	--main-background-color: white;
+	--font-color: #9ba1a3;
+	--border-gray-color: #dadada;
+	--black-color: #000000;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+.main-container{
+	display:flex;
+	flex-direction:column;
+	align-items:seretch;
+	width:100%;
+}
+section{
+	width:99.2%;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.search-input-wrap input{
+	width:100%;
+	height:23px;
+	border:solid 1px var(--border-gray-color);
+	padding:10px 0 10px 0;
+	margin:5px 0 10px 0;
+	font-size:13px;
+	font-weight:100;
+	text-indent:10px;
+}
+#sign-in span{
+	color:red;
+	font-weight:bold;
+}
+.search-button-wrap{
+	padding-top:20px;
+}
+.search-button-wrap input{
+	width:100%;
+	height:50px;
+	text-align:center;
+	font-size:17px;
+	font-weight:bold;
+	border:none;
+	color:var(--main-background-color);
+	background:var(--black-color);
+}
+.other-wrap{
+	font-size:14px;
+	color:var(--font-color);
+	padding:90px 0 20px 0;
+	display:flex;
+	justify-content: center;
+}
+
+.search-button-wrap, .other-wrap:hover{
+	cursor:pointer;
+}
+
+</style>
+<script type="text/javascript">
+ 
+</script>
+</head>
+<body>
+	<div class="main-container">
+		<div class="main-wrap">
+		<section>
+			<form action="mypage.jsp">
+			<div class="search-input-wrap">
+				<input placeholder="주문자명을 입력하세요" type="text" name="buyer"></input>
+			</div>
+			<div class="search-input-wrap">
+				<input placeholder="주문번호를 입력하세요" type="text" name="buynum"></input>
+			</div>
+			<div class="search-alert-wrap"></div>
+			<div class="search-button-wrap">
+				<input type="submit" value="비회원 주문조회">
+			</div>
+			<div class="other-wrap">
+				<span id="sign-in"><span>회원가입</span>하고 혜택받으세요</span>
+			</div>
+			</form>
+		</section>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+</script>
+</html>
