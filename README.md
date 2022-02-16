@@ -86,7 +86,6 @@ SELECT s.psize FROM sproduct p, stock s WHERE p.pcode = s.PCODE AND pname LIKE ?
 <details markdown="1">
 <summary>펼치기</summary>
 
-<a href="https://ibb.co/j89XFbQ"><img src="https://i.ibb.co/WHNJ1GM/1.png" alt="1" border="0"></a>
-<a href="https://ibb.co/TvpNFKQ"><img src="https://i.ibb.co/C1NSTJj/2.png" alt="2" border="0"></a>
+<a href="https://ibb.co/vjP0J4B"><img src="https://i.ibb.co/bKBcr53/26.png" alt="26" border="0"></a>
 
 </details>
